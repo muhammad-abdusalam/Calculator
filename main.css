@@ -1,0 +1,159 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  user-select: none;
+}
+button:focus {
+  outline: none;
+}
+body {
+  font-family: "Tahoma", sans-serif;
+}
+main {
+  min-height: 100vh;
+
+  background-color: #ffb178;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Calc Start */
+section#calc {
+  width: 350px;
+  border-radius: 15px;
+  padding: 20px;
+
+  background-color: #243441;
+}
+/* Screen */
+section#calc #calc-screen {
+  width: 100%;
+
+  padding: 10px;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  overflow-x: auto;
+}
+section#calc #calc-screen::-webkit-scrollbar {
+  width: 0;
+  height: 10px;
+}
+section#calc #calc-screen::-webkit-scrollbar-track {
+  background-color: #00000021;
+}
+section#calc #calc-screen::-webkit-scrollbar-thumb {
+  background-color: #14141429;
+}
+section#calc #calc-screen #result {
+  color: #fff;
+
+  font-size: 60px;
+}
+section#calc #calc-screen #operations {
+  color: #999;
+}
+/* Inputs */
+section#calc #calc-inputs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(60px, 1fr));
+  grid-template-rows: repeat(5, minmax(60px, 1fr));
+  grid-template-areas:
+    "ac del remain div" "seven eight nine multi" "four five six minus"
+    "one two three plus" "zero dot eq eq";
+  gap: 10px;
+}
+section#calc #calc-inputs button {
+  border-radius: 6px;
+  box-shadow: 0 0px 5px #00000059;
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  background-color: #243441;
+}
+section#calc #calc-inputs button.number {
+  color: #999;
+}
+section#calc #calc-inputs button.operator {
+  color: #ed802e;
+}
+section#calc #calc-inputs button:active {
+  opacity: 0.5;
+}
+#calc-inputs #zero {
+  grid-area: zero;
+}
+#calc-inputs #one {
+  grid-area: one;
+}
+#calc-inputs #two {
+  grid-area: two;
+}
+#calc-inputs #three {
+  grid-area: three;
+}
+#calc-inputs #four {
+  grid-area: four;
+}
+#calc-inputs #five {
+  grid-area: five;
+}
+#calc-inputs #six {
+  grid-area: six;
+}
+#calc-inputs #seven {
+  grid-area: seven;
+}
+#calc-inputs #eight {
+  grid-area: eight;
+}
+#calc-inputs #nine {
+  grid-area: nine;
+}
+#calc-inputs #dot {
+  grid-area: dot;
+}
+#calc-inputs #plus {
+  grid-area: plus;
+}
+#calc-inputs #minus {
+  grid-area: minus;
+}
+#calc-inputs #multiply {
+  grid-area: multi;
+}
+#calc-inputs #division {
+  grid-area: div;
+}
+#calc-inputs #remainder {
+  grid-area: remain;
+}
+#calc-inputs #equal-sign {
+  grid-area: eq;
+
+  background-color: #ed802e !important;
+  color: #fff !important;
+}
+#calc-inputs #clear-screen {
+  grid-area: ac;
+  color: #ed802e;
+}
+#calc-inputs #negative {
+  grid-area: del;
+  color: #ed802e !important;
+  letter-spacing: 3px;
+}
+/* Calc End */
