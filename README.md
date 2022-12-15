@@ -1,9 +1,9 @@
-# This Is My First Simple Calculator
+# This Is My Very Simple Calculator
 
 ## Screenshots
 
-![Desktop](./screenshots/img-1.png);
-![Mobile](./screenshots/img-2.png);
+![Desktop](./screenshots/img-1.png)
+![Mobile](./screenshots/img-2.png)
 
 ## Demo
 
