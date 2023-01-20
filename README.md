@@ -1,7 +1,5 @@
 # This Is My Very Simple Calculator
 
-## Screenshots
-
 ![Desktop](./screenshots/img-1.png)
 ![Mobile](./screenshots/img-2.png)
 
