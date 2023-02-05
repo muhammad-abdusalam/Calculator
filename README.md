@@ -5,4 +5,4 @@
 
 ## Demo
 
-https://muhammad-adam778.github.io/Calculator/
+https://muhammad-abdusalam.github.io/Calculator/
